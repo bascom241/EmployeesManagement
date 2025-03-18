@@ -1,10 +1,12 @@
 package com.example.Employees.reprository;
 
 import com.example.Employees.model.Employee;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class EmployeeRepository {
     private List<Employee> employees = new ArrayList<>();
 
