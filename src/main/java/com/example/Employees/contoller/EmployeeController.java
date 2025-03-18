@@ -24,4 +24,9 @@ public class EmployeeController {
         return  employeeService.addEmployee(employee);
     }
 
+    @GetMapping("/{employeeId}")
+    public Employee getEmployee(@PathVariable int employeeId){
+        return employeeService.getEmployee(employeeId);
+    }
+
 }

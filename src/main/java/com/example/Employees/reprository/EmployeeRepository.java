@@ -25,4 +25,12 @@ public class EmployeeRepository {
         employees.add(employee);
         return employee;
     }
+    public Employee getEmployee(int employeeId){
+        for(int i=1sta; i<=employees.size(); i++){
+            if(employees.get(i).getEmployeeId() == employeeId){
+                return employees.get(i);
+            }
+        }
+        return null;
+    }
 }
